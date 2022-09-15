@@ -6,9 +6,6 @@ If you are using this for commerical purposes, a sponsorship or donation would b
 (helps us put more cool stuff out!)  - but again, is NOT required! 
 */
 
-let query = ""
-let type = ""
-let theme = ""
 function setContent(x){
   decode(x) 
 
@@ -58,10 +55,8 @@ window.location.href =  `https://${window.location.hostname}/Send-A-Card/404.htm
 	     
 
 var script = document.createElement('script');
-
-	     // prevent people sending malious code (probably can be removed but why not keep it) 
 	     
-script.src = "https://cdnjs.cloudflare.com/ajax/libs/js-xss/0.3.3/xss.min.js";
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js";
 
 document.head.appendChild(script); //or something of the likes
 
