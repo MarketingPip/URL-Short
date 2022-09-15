@@ -56,7 +56,7 @@ window.location.href =  `https://${window.location.hostname}/Send-A-Card/404.htm
 
 var script = document.createElement('script');
 	     
-script.src = "https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js";
+
 
 
 
@@ -65,6 +65,9 @@ script.onload = function () {
 	setContent(c)
   
 };
+	 
+script.src = "https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js";
+	     
 document.body.appendChild(script); //or something of the likes
 	 
 
