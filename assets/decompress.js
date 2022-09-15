@@ -22,9 +22,12 @@ function display(value)
 {
 
 /// set location
-
+if (value != ""){
 window.location.href = value
-
+} else{
+window.location.href =  `https://${window.location.hostname}/Send-A-Card/404.html`	
+}
+	
 }
 }
 
