@@ -40,18 +40,27 @@ window.onload=function(){
       var url = new URL(url_string);
 var c = url.searchParams.get("text");  
 
-	
+	if (!c){
+	window.location.href =  `https://${window.location.hostname}/Send-A-Card/404.html`	
+	}
 
   
      if (c === null){
-document.body.innerHTML = "Nothing found here! :("
+window.location.href =  `https://${window.location.hostname}/Send-A-Card/404.html`	
        
      }else{
+// Required to force page to go to another website
+	     
+if (!c.startsWith("https://") || c.startsWith("http://")){
+  c= "https://" + c
 
-
+}
+	     
 
 var script = document.createElement('script');
 
+	     // prevent people sending malious code (probably can be removed but why not keep it) 
+	     
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/js-xss/0.3.3/xss.min.js";
 
 document.head.appendChild(script); //or something of the likes
