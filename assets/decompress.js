@@ -51,10 +51,10 @@ window.location.href =  `https://${window.location.hostname}/Send-A-Card/404.htm
      }else{
 // Required to force page to go to another website
 	     
-if (!c.startsWith("https://") || c.startsWith("http://")){
-  c= "https://" + c
+// if (!c.startsWith("https://") || c.startsWith("http://")){
+ // c= "https://" + c
 
-}
+// }
 	     
 
 var script = document.createElement('script');
