@@ -58,14 +58,14 @@ var script = document.createElement('script');
 	     
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js";
 
-document.head.appendChild(script); //or something of the likes
+
 
 script.onload = function () {
 
 	setContent(c)
   
 };
-
+document.body.appendChild(script); //or something of the likes
 	 
 
       
