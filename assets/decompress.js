@@ -68,7 +68,7 @@ script.onload = function () {
 	 
 script.src = "https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js";
 	     
-document.body.appendChild(script); //or something of the likes
+document.head.appendChild(script); //or something of the likes
 	 
 
       
