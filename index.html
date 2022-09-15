@@ -1,0 +1,47 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">url shortener service</a>
+    </div>
+  </div>
+</nav>
+
+<p class="text-center">Enter any long URL Lets shorten it!</p>
+
+<div class="form-group" style="
+                               width: 50%;
+                               margin-left: 25%;
+                               text-align: -webkit-center;
+                               ">
+  <form>
+  <input class="form-control" type="text" id="shortenURL" placeholder="Enter URL" required />
+  <button class="btn btn-success" type="submit" id="shorten">SHORTEN</button>
+  </form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lz-string/1.4.4/lz-string.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+  
+
+var longYOURL;
+
+$("#shorten").click(function(e){
+ 
+
+  var longYOURL = $("#shortenURL").val();
+if (longYOURL != ""){
+  
+  e.preventDefault();
+ var crushed = encodeURIComponent(LZString.compressToBase64(longYOURL));
+      $("#result").html(crushed);
+      bootbox.alert(crushed);
+}
+    
+  
+});
+
+
+</script>
