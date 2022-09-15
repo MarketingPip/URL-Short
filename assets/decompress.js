@@ -33,7 +33,7 @@ window.location.href = value
 
 
 
-if (window.location.href.indexOf("card?") != -1) {
+if (window.location.href.indexOf("link?") != -1) {
 
 window.onload=function(){
      var url_string = window.location.href
